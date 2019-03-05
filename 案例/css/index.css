@@ -1,0 +1,31 @@
+/* index.html文件主体部分的样式 */
+/* 侧边栏和产品广告部分 start */
+.top {
+    width: 100%;
+    height: 830px;
+    background-color: #fff;
+}
+/* 侧边栏和产品广告部分 end */
+
+
+/* 页面主体（产品展示）部分 start */
+.body {
+    width: 100%;
+    height: 695px;
+    background-color: #F5F5F5;
+}
+/* 页面主体（产品展示）部分 end */
+
+
+
+/* 右边的固定栏 start */
+.fixed-bar {
+    width: 82px;
+    height: 366px;
+    background-color: purple;
+    position: fixed;
+    top: 222px;
+    right: 0;
+}
+/* 右边的固定栏 end */
+

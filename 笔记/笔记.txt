@@ -1,0 +1,12 @@
+整个页面结构划分：
+各个模块的高度和背景色
+header：40px #333
+nav：100px #fff
+top：830px #fff
+body:695px(暂时的) #f5f5f5
+bottom： 274px #fff
+footer：172px #fafafa
+右边的固定栏：fixed-bar： 82px*366px  fixed right:0 top:222px
+
+
+

@@ -1,0 +1,436 @@
+/* 公共样式文件 */
+/* 清除指定元素的内外边距 */
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+/* 公共的版心样式 */
+.w {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+/* 公共的浮动样式 */
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+/* 公共样式：清除列表的小圆点 */
+ul {
+    list-style: none;
+}
+
+/* 将所有的li元素在一行上显示 */
+li {
+    display: inline-block;
+}
+
+/* 取出a标签的下划线 */
+a {
+    text-decoration: none;
+}
+
+/* 清除浮动 */
+.clear {
+    clear: both;
+}
+
+/* 图标字体样式 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?2a6nlp');
+    src:  url('../fonts/icomoon.eot?2a6nlp#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?2a6nlp') format('truetype'),
+      url('../fonts/icomoon.woff?2a6nlp') format('woff'),
+      url('../fonts/icomoon.svg?2a6nlp#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+
+
+
+
+/* 页面头部 start */
+header {
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    line-height: 40px;
+}
+
+header li:hover {
+    /* 将鼠标的样式变为小手 */
+    cursor: pointer;
+}
+
+
+header li a {
+    font-size: 12px;
+    color: #B0B0B0;
+
+}
+
+header li:hover a {
+    color: #fff;
+}
+
+header li button {
+    font-size: 12px;
+    color: #B0B0B0;
+    /* 设置背景为透明色 */
+    background-color: transparent;
+    /* 去掉边框 */
+    border: none;
+}
+
+header li button:hover {
+    color: #fff;
+    /* 设置鼠标的样式 */
+    cursor: text;
+}
+
+header .shopping-car {
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    margin-left: 15px;
+    background-color: #424242;
+    position: relative;
+}
+
+header .shopping-car i {
+    font-family: icomoon;
+    font-style: normal;
+    padding: 0 5px;
+}
+
+header .shopping-car:hover {
+    background-color: #fff;
+}
+
+header .shopping-car:hover a {
+    color: #ff6700;
+}
+
+header .shopping-car .small-car {
+    width: 316px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    font-size: 12px;
+    color: #424242;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    display: none;
+}
+
+header .shopping-car:hover .small-car {
+    display: block;
+}
+
+
+header .space {
+    width: 1px;
+    height: 10px;
+    background-color: #3D423D;
+    margin: 0 7px;
+}
+
+header .download-app {
+    position: relative;
+}
+
+header .download-app .code-box {
+    width: 124px;
+    height: auto;
+    background-color: #fff;
+    position: absolute;
+    left: -62px;
+    margin-left: 50%;
+    top: 40px;
+    padding: 18px 0 14px;
+    display: none;
+}
+
+header .download-app:hover .code-box {
+    display: block;
+}
+
+header .code-box .three-coner {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+header .code-box img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: 0 auto;
+}
+
+header .code-box span {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 14px;
+    /* line-height: 14px; */
+    /* em的取值是父元素字体的大小 1em=14px */
+    line-height: 1em;
+}
+/* 页面头部 end */
+
+
+
+
+
+
+/* 顶部导航栏 start */
+nav {
+    width: 100%;
+    height: 100px;
+}
+
+nav .nav-list {
+    height: 100%;
+    position: relative;
+}
+
+nav .nav-list .logo {
+    display: block;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -27px;
+    background-image: url("../img/mi-logo.jpg");
+    background-repeat: no-repeat;
+    background-size: 55px 55px;
+    /* 将文字左缩进看不到 */
+    text-indent: -999em;
+}
+
+nav .nav-list .listitem {
+    line-height: 88px;
+    position: absolute;
+    left: 230px;
+    top: 50%;
+    margin-top: -44px;
+}
+nav .listitem li {
+    padding: 0 10px;
+}
+
+nav .listitem a {
+    font-size: 16px;
+    color: #333;
+}
+nav .listitem a:hover {
+    color: #ff6700;
+}
+
+nav .nav-list .search-list {
+    /* width: 300px;
+    height: 52px; */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -25px;
+}
+
+nav .search-list .myinput {
+    width: 245px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    padding: 0 10px;
+}
+nav .search-list .search {
+    width: 52px;
+    height: 52px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    border-left: none;
+    padding: 0 6px;
+    font-family: icomoon;
+    font-size: 18px;
+    font-weight: bold;
+    color: #616161;
+}
+
+nav .search-list .search:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+nav .search-list .keywords {
+    position: absolute;
+    right: 64px;
+    top: 50%;
+    margin-top: -10px;
+    display: block;
+}
+
+nav .keywords a {
+    font-size: 10px;
+    color: #757575;
+    background-color: #eee;
+    padding: 0 5px;
+}
+
+nav .keywords a:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+/* :focus 表示获取焦点事件 */
+nav .search-list .myinput:focus {
+    outline: none;
+    border: 1px solid #ff6700;
+}
+nav .myinput:focus+.search {
+    border: 1px solid #ff6700;
+    border-left: none;
+}
+/* 取出兄弟元素，+找到其后第一个子元素然后判断 */
+nav .myinput:focus~.keywords {
+    display: none;
+}
+
+nav .search-list .search-words {
+    width: 265px;
+    height: auto;
+    border: 1px solid #ff6700;
+    border-top: none;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    display: none;
+    z-index: 1;
+    background: #fff;
+}
+
+nav .myinput:focus~.search-words {
+    display: block;
+}
+
+nav .result-list li {
+    /* padding: 上 右  下 左 */
+    /* padding: 0 16px 0 14px; */
+    padding-left: 14px;
+    padding-right: 16px;
+    line-height: 30px;
+    font-size: 12px;
+    display: block;
+}
+
+nav .result-list a {
+    color: #424242;
+    display: block;
+}
+
+nav .result-list span {
+    color: #b0b0b0;
+    float: right;
+}
+
+/* 顶部导航栏 end */
+
+/*  侧边栏和产品广告部分 开始 */
+    .top{
+        width: 100%;
+        height: 830px;
+        background-color:pink;
+    }
+   .w aside{
+       width: 100%;
+       height: 460px;
+        background-color: blue;
+        position: relative;
+        background-image: url(https://i1.mifile.cn/a4/xmad_15514075566758_BTjPG.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;  
+    }
+   .w aside .aside-list{
+       height: 100%;
+       width: 234px;
+       background: rgba(0,0,0,0.6);
+       position: absolute;
+       padding: 20px 0px;
+       box-sizing: border-box;
+       left: 0;
+       top: 0;
+   }
+   .w .aside-list li{
+       display: block;
+       line-height: 40px; 
+       padding-left:30px; 
+   }
+   .w .aside-list li:hover{
+       background-color: #ff6700;
+   }
+   .w .aside-list a{
+       color: #fff;
+       font-size: 14px;
+   }
+/* 侧边栏和产品广告部分 结束  */
+
+
+
+
+
+/* 页面底部帮助中心 start */
+.bottom {
+    width: 100%;
+    height: 274px;
+    background-color: #fff;
+}
+/* 页面底部帮助中心 end */
+
+
+/* 页面底部版权部分 start */
+footer {
+    width: 100%;
+    height: 172px;
+    background-color: #FAFAFA;;
+}
+/* 页面底部版权部分 end */
